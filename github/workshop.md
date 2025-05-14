@@ -1,4 +1,4 @@
-# GitHub for Artists – 4‑Hour Hands‑On Workshop
+# GitHub – 4‑Hour Hands‑On Workshop
 
 Welcome! This guide is the single source of truth for today’s workshop. Follow it in **VS Code’s Markdown preview** while running commands in your own terminal. Everything here can be copied verbatim.
 
@@ -15,15 +15,6 @@ Welcome! This guide is the single source of truth for today’s workshop. Follow
 
 ## 🗺️ Table of Contents
 
-1. [Agenda & Learning Goals](#agenda--learning-goals)
-2. [Section 1 – Why Git?](#section-1--why-git)
-3. [Section 2 – Accounts & Installs](#section-2--accounts--installs)
-4. [Section 3 – Core Git Workflow](#section-3--core-git-workflow)
-5. [Section 4 – Collaboration & Recovery](#section-4--collaboration--recovery)
-6. [Section 5 – GitHub Pages](#section-5--github-pages)
-7. [Section 6 – AI‑Powered Workflows](#section-6--ai-powered-workflows)
-8. [Reference Cheat Sheet](#reference-cheat-sheet)
-
 ---
 
 ## Agenda & Learning Goals
@@ -31,7 +22,7 @@ Welcome! This guide is the single source of truth for today’s workshop. Follow
 |       Time      | Block                                                                                                  | Goals                                                    |
 | :-------------: | ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------- |
 | **00:00‑00:10** | Welcome & Wi‑Fi                                                                                        | Everyone online, repo cloned                             |
-| **00:10‑00:40** | **Section 1** – What *is* Git?                                                                         | Understand version control concepts, repos, commits      |
+| **00:10‑00:40** | **Section 1** – What *is* Git?                                                                         | Understand version control concepts, repos, commits, ghpages      |
 | **00:40‑00:50** | **☕ Break 1**                                                                                          |                                                          |
 | **00:50‑01:40** | **Section 2** – Accounts & Installs                                                                    | GitHub account ✅, Git & VS Code installed ✅              |
 | **01:40‑01:50** | **☕ Break 2**                                                                                          |                                                          |
@@ -44,12 +35,13 @@ Welcome! This guide is the single source of truth for today’s workshop. Follow
 
 ## Section 1 – Why Git?
 
-### 1.1 What problems does Git solve for artists?
+### 1.1 What problems does Git solve for creative technologists?
 
-* Safe experimentation (branches) without wrecking the original artwork.
+* Safe experimentation (branches) without wrecking the original work.
 * Track progress snapshots; roll back instantly.
 * Easy collaboration & attribution.
 * Portfolio in the open – share a link, not a ZIP.
+* Open source public footprint - find collaborators
 
 ### 1.2 Core concepts in one slide
 
@@ -87,7 +79,7 @@ brew install git
 
 1. Download **Git for Windows** installer: [https://gitforwindows.org](https://gitforwindows.org)
 2. Keep default options, *especially* "Git from the command line and also from 3rd‑party software".
-3. Re‑open **PowerShell** after install.
+3. Re‑open **git bash** after install.
 
 </details>
 
@@ -114,10 +106,9 @@ git config --global init.defaultBranch main
 
 | Extension                         | Purpose                     | Install Command                                                |
 | --------------------------------- | --------------------------- | -------------------------------------------------------------- |
-| **GitHub Pull Requests & Issues** | Review & PRs inside VS Code | `code --install-extension github.vscode-pull-request-github`   |
-| **Git Graph**                     | Visual history              | `code --install-extension mhutchie.git-graph`                  |
-| **Markdown Preview Enhanced**     | Render this guide           | `code --install-extension shd101wyy.markdown-preview-enhanced` |
-| **Roo Code**                     | AI code assistant           | `code --install-extension rode.code`                           |
+| **Git Graph**                     | Visual history              | `search git graphh`                  |
+| **Markdown Preview Enhanced**     | Render this guide           | `search markdown mermaid` |
+| **Roo Code**                     | AI code assistant           | `search roo code`                           |
 
 After install, reload VS Code.
 
