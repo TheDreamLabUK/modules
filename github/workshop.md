@@ -1,4 +1,4 @@
-# GitHub – 4‑Hour Hands‑On Workshop
+# GitHub – 4 Hour Hands‑On Workshop
 
 Welcome! This guide is the single source of truth for today’s workshop. Follow it in **VS Code’s Markdown preview** while running commands in your own terminal. Everything here can be copied verbatim.
 
@@ -104,6 +104,11 @@ git config --global init.defaultBranch main
 
 ### 2.5 Install VS Code extensions
 
+Extensions can be installed in the extension browser. Be a little careful with this as it's possible to install malicious code.
+Let's see an example.
+https://github.com/mjbvz/vscode-markdown-mermaid
+
+
 | Extension                         | Purpose                     | Install Command                                                |
 | --------------------------------- | --------------------------- | -------------------------------------------------------------- |
 | **Git Graph**                     | Visual history              | `search git graphh`                  |
@@ -114,7 +119,7 @@ After install, reload VS Code.
 
 ### 2.6 Configure Roo Code with OpenAI key (2 min)
 
-1. Grab your key: [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)
+1. Grab your key from gemini
 2. In VS Code → **Preferences › Settings** → search **Roo Code: Api Key**.
 3. Paste key.
    *Keys are stored locally; revoke anytime.*
@@ -193,14 +198,6 @@ git push -u origin experiment-neon
 
 ## Section 6 – AI‑Powered Workflows
 
-### 6.1 Commit message generation
-
-Select changed files in **Source Control** tab → click ✨ **Roo Code › Suggest Commit Message**.
-
-### 6.2 Image‑to‑prompt via Roo Code
-
-1. Right‑click an image file → **Roo Code › Generate Alt‑Text**.
-2. The plugin uses the OpenAI Vision model; commit the alt text as part of accessibility best practices.
 
 ### 6.3 Prompt ideas
 
@@ -238,13 +235,4 @@ git branch -d feature-x         # delete local branch
 
 ---
 
-### Further Resources
 
-* **Pro Git** book (free): [https://git-scm.com/book/en/v2](https://git-scm.com/book/en/v2)
-* **Oh Sh\*t, Git!?** quick fixes: [https://ohshitgit.com/](https://ohshitgit.com/)
-* **GitHub Learning Lab** interactive tutorials.
-* Follow‑up challenges in `extra‑challenges/` folder.
-
----
-
-**End of Guide – Happy Creating!**
