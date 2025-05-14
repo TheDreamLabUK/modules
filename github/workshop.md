@@ -37,7 +37,7 @@ Welcome! This guide is the single source of truth for today’s workshop. Follow
 | **01:40‑01:50** | **☕ Break 2**                                                                                          |                                                          |
 | **01:50‑02:50** | **Section 3** – Core Workflow                                                                          | Clone → edit → commit → push 🎨                          |
 | **02:50‑03:00** | **☕ Break 3**                                                                                          |                                                          |
-| **03:00‑03:50** | **Section 4** – Collaboration & Recovery<br>**Section 5** – GitHub Pages<br>**Section 6** – AI Helpers | PRs, branching, time‑travel, free websites, Rode Code AI |
+| **03:00‑03:50** | **Section 4** – Collaboration & Recovery<br>**Section 5** – GitHub Pages<br>**Section 6** – AI Helpers | PRs, branching, time‑travel, free websites, Roo Code AI |
 | **03:50‑04:00** | Wrap‑up & next steps                                                                                   | Deploy Pages site, resources                             |
 
 ---
@@ -117,14 +117,14 @@ git config --global init.defaultBranch main
 | **GitHub Pull Requests & Issues** | Review & PRs inside VS Code | `code --install-extension github.vscode-pull-request-github`   |
 | **Git Graph**                     | Visual history              | `code --install-extension mhutchie.git-graph`                  |
 | **Markdown Preview Enhanced**     | Render this guide           | `code --install-extension shd101wyy.markdown-preview-enhanced` |
-| **Rode Code**                     | AI code assistant           | `code --install-extension rode.code`                           |
+| **Roo Code**                     | AI code assistant           | `code --install-extension rode.code`                           |
 
 After install, reload VS Code.
 
-### 2.6 Configure Rode Code with OpenAI key (2 min)
+### 2.6 Configure Roo Code with OpenAI key (2 min)
 
 1. Grab your key: [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)
-2. In VS Code → **Preferences › Settings** → search **Rode Code: Api Key**.
+2. In VS Code → **Preferences › Settings** → search **Roo Code: Api Key**.
 3. Paste key.
    *Keys are stored locally; revoke anytime.*
 
@@ -204,18 +204,18 @@ git push -u origin experiment-neon
 
 ### 6.1 Commit message generation
 
-Select changed files in **Source Control** tab → click ✨ **Rode Code › Suggest Commit Message**.
+Select changed files in **Source Control** tab → click ✨ **Roo Code › Suggest Commit Message**.
 
-### 6.2 Image‑to‑prompt via Rode Code
+### 6.2 Image‑to‑prompt via Roo Code
 
-1. Right‑click an image file → **Rode Code › Generate Alt‑Text**.
+1. Right‑click an image file → **Roo Code › Generate Alt‑Text**.
 2. The plugin uses the OpenAI Vision model; commit the alt text as part of accessibility best practices.
 
 ### 6.3 Prompt ideas
 
 * "Refactor this README into a beginner‑friendly tutorial."
 * "Suggest color‑blind‑safe palette variations for palette.json."
-  Rode Code will embed the suggestions as a Git patch you can stage.
+  Roo Code will embed the suggestions as a Git patch you can stage.
 
 ---
 
