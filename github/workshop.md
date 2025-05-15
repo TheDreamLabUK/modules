@@ -117,12 +117,48 @@ https://github.com/mjbvz/vscode-markdown-mermaid
 
 After install, reload VS Code.
 
-### 2.6 Configure Roo Code with OpenAI key (2 min)
+### 2.6 Setting up Google Cloud and API Key (10 min)
 
-1. Grab your key from gemini
-2. In VS Code → **Preferences › Settings** → search **Roo Code: Api Key**.
-3. Paste key.
-   *Keys are stored locally; revoke anytime.*
+To use AI-powered features in Roo Code (and many other AI tools), you'll often need an API key from a cloud provider. Here’s how to get one from Google Cloud Platform (GCP):
+
+1.  **Sign in to Google Cloud Console:**
+    *   Go to [https://console.cloud.google.com/](https://console.cloud.google.com/).
+    *   If you don't have an account, you'll need to sign up. Google often provides free credits for new users.
+2.  **Create or Select a Project:**
+    *   AI services are typically associated with a project.
+    *   At the top of the page, click the project selector.
+    *   Either select an existing project or click "**NEW PROJECT**".
+    *   Give your project a name (e.g., "My AI Experiments") and click "**CREATE**".
+3.  **Enable Necessary APIs (Example: Vertex AI):**
+    *   Once your project is selected, use the navigation menu (hamburger icon ☰) and go to **APIs & Services > Library**.
+    *   Search for the API you intend to use (e.g., "Vertex AI API" for many Google AI models, or the specific API Roo Code requires).
+    *   Click on the API and then click "**ENABLE**".
+    *   *(Note: The specific API needed will depend on the AI tool or service you're configuring. Check the Roo Code documentation if a specific Google Cloud API is mentioned.)*
+4.  **Create an API Key:**
+    *   In the navigation menu, go to **APIs & Services > Credentials**.
+    *   Click "**+ CREATE CREDENTIALS**" at the top of the page.
+    *   Select "**API key**" from the dropdown.
+    *   Your API key will be created and displayed. **Copy this key immediately and store it securely.** You'll need it for Roo Code.
+5.  **Restrict Your API Key (Highly Recommended):**
+    *   For security, it's crucial to restrict your API key.
+    *   In the API key list on the Credentials page, find your newly created key and click the pencil icon (Edit API key) or its name.
+    *   Under "**API restrictions**":
+        *   Select "**Restrict key**".
+        *   From the dropdown, choose the specific API(s) the key should have access to (e.g., "Vertex AI API").
+    *   Under "**Application restrictions**" (optional, for added security):
+        *   You can restrict usage to specific IP addresses, websites, etc. For local tools like VS Code extensions, this might be less straightforward if your IP address changes frequently.
+    *   Click "**SAVE**".
+
+You now have a Google Cloud API key ready to be used. Make sure to keep it confidential.
+
+---
+### 2.7 Configure Roo Code with Google Cloud API Key (5 min)
+
+1.  Use the Google Cloud API Key you created in **Section 2.6**.
+2.  In VS Code → **Preferences › Settings** (or `Cmd+,` / `Ctrl+,`).
+3.  Search for **Roo Code: Api Key** and paste your key there.
+4.  Search for **Roo Code: Rate Limit Timeout** and set it to `30000` (milliseconds, for 30 seconds).
+    *API keys are stored locally in your VS Code settings. You can revoke them anytime from the Google Cloud Console.*
 
 ---
 
@@ -198,6 +234,33 @@ git push -u origin experiment-neon
 
 ## Section 6 – AI‑Powered Workflows
 
+### 6.1 What is Roo Code?
+
+Roo Code is a VS Code extension that acts as an AI-powered coding assistant. It integrates directly into your editor, allowing you to leverage artificial intelligence to help with various coding tasks, such as:
+
+*   **Code generation:** Ask Roo Code to write functions, classes, or boilerplate code based on your descriptions.
+*   **Code explanation:** Select a piece of code and ask Roo Code to explain what it does in plain English.
+*   **Refactoring:** Get suggestions on how to improve or restructure existing code.
+*   **Debugging:** Ask for help in identifying and fixing bugs.
+*   **Answering questions:** Get quick answers to programming-related questions without leaving your editor.
+*   **Generating documentation:** Create docstrings or comments for your code.
+
+It uses the API key you configured (from Google Cloud in our setup) to communicate with powerful AI models.
+
+### 6.2 How to use Roo Code
+
+Once installed and configured with your API key:
+
+1.  **Open the Roo Code sidebar:** Look for the Roo Code icon in the VS Code activity bar (usually on the left).
+2.  **Interact via chat:** You can type questions or instructions directly into the Roo Code chat panel.
+    *   Be specific with your requests. For example, instead of "write code," try "write a Python function that takes a list of numbers and returns their sum."
+3.  **Use context from your editor:**
+    *   **Selection:** Select a piece of code in your editor before asking a question. Roo Code will often use the selected code as context for its response (e.g., "Explain this selected code," or "Refactor this function to be more efficient").
+    *   **Active File:** Roo Code can also consider the content of your currently active file.
+4.  **Apply suggestions:** Roo Code might offer code snippets or patches. You can usually copy these directly or apply them with a click.
+5.  **Iterate:** If the first response isn't perfect, refine your question or ask follow-up questions.
+
+Experiment with different prompts and selected code to see how Roo Code can best assist your workflow.
 
 ### 6.3 Prompt ideas
 
