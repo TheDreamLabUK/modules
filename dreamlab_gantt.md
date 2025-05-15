@@ -1,3 +1,4 @@
+```mermaid
 gantt
     title Bootstrapping DreamLab: A Creative Technology Agency
     dateFormat  YYYY-MM-DD
@@ -27,3 +28,4 @@ gantt
     Official Launch Campaign        :d2, after d1, 2w
     First Client Acquisition        :d3, after d2, 8w
     Gather Feedback & Iterate       :d4, after d3, ongoing
+```
