@@ -41,8 +41,8 @@ graph TD
 
 ```mermaid
 graph TD
-    OR[Original GitHub Repo (Upstream)]
-    UF[User F (Contributor)] -- Forks --> FR[User F's Fork on GitHub]
+    OR[Original GitHub Repo Upstream]
+    UF[User F Contributor] -- Forks --> FR[User F's Fork on GitHub]
     FR -- Clones --> LF[Local F]
     LF -- Works on new-feature branch --> LF
     LF -- Pushes new-feature branch --> FR
