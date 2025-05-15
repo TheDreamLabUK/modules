@@ -22,28 +22,31 @@ When collaborating, you'll primarily use either **forks** or **branches**. The c
 
 **Visualising the Difference:**
 
+**Branching Model (Shared Repository):**
+
 ```mermaid
 graph TD
-    subgraph "Branching Model (Shared Repository)"
-        R1[Shared GitHub Repo]
-        U1[User A] -- Clones/Pulls --> L1[Local A]
-        U2[User B] -- Clones/Pulls --> L2[Local B]
-        L1 -- Works on branch-A --> L1
-        L1 -- Pushes branch-A --> R1
-        L2 -- Works on branch-B --> L2
-        L2 -- Pushes branch-B --> R1
-        R1 -- Pull Request (branch-A to main) --> R1
-        R1 -- Pull Request (branch-B to main) --> R1
-    end
+    R1[Shared GitHub Repo]
+    U1[User A] -- Clones/Pulls --> L1[Local A]
+    U2[User B] -- Clones/Pulls --> L2[Local B]
+    L1 -- Works on branch-A --> L1
+    L1 -- Pushes branch-A --> R1
+    L2 -- Works on branch-B --> L2
+    L2 -- Pushes branch-B --> R1
+    R1 -- Pull Request (branch-A to main) --> R1
+    R1 -- Pull Request (branch-B to main) --> R1
+```
 
-    subgraph "Forking Model (Contributing to External Repo)"
-        OR[Original GitHub Repo (Upstream)]
-        UF[User F (Contributor)] -- Forks --> FR[User F's Fork on GitHub]
-        FR -- Clones --> LF[Local F]
-        LF -- Works on new-feature branch --> LF
-        LF -- Pushes new-feature branch --> FR
-        FR -- Pull Request (new-feature to OR's main) --> OR
-    end
+**Forking Model (Contributing to External Repo):**
+
+```mermaid
+graph TD
+    OR[Original GitHub Repo (Upstream)]
+    UF[User F (Contributor)] -- Forks --> FR[User F's Fork on GitHub]
+    FR -- Clones --> LF[Local F]
+    LF -- Works on new-feature branch --> LF
+    LF -- Pushes new-feature branch --> FR
+    FR -- Pull Request (new-feature to OR's main) --> OR
 ```
 
 ## 4.2 Opening a Pull Request (PR)
