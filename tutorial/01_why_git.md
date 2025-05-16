@@ -36,7 +36,7 @@ The following Mermaid diagram illustrates the typical Git workflow clearly:
 graph LR
     A[Local Computer] -- git add --> B[Staging Area]
     B -- git commit --> C[Local Repository]
-    C -- git push --> D[Remote Repository (GitHub)]
+    C -- git push --> D[Remote Repository GitHub]
     D -- git pull/git clone --> A
     C -- git branch --> E[New Branch]
     E -- git checkout --> C
