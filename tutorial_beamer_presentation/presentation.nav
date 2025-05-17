@@ -1,0 +1,155 @@
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\sectionentry {1}{Introduction & Workshop Overview}{3}{Introduction & Workshop Overview}{0}}
+\headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\slideentry {1}{0}{2}{4/4}{}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\slideentry {1}{0}{3}{5/5}{}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\beamer@sectionpages {3}{5}}
+\headcommand {\beamer@subsectionpages {3}{5}}
+\headcommand {\sectionentry {2}{Why Git? Understanding Version Control}{6}{Why Git? Understanding Version Control}{0}}
+\headcommand {\slideentry {2}{0}{1}{6/6}{}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\slideentry {2}{0}{2}{7/7}{}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\slideentry {2}{0}{3}{8/8}{}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\beamer@sectionpages {6}{8}}
+\headcommand {\beamer@subsectionpages {6}{8}}
+\headcommand {\sectionentry {3}{Essential Setup: Accounts & Installations}{9}{Essential Setup: Accounts & Installations}{0}}
+\headcommand {\slideentry {3}{0}{1}{9/9}{}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\beamer@subsectionpages {9}{9}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{10}{GitHub Account}}
+\headcommand {\slideentry {3}{1}{1}{10/10}{GitHub Account}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{11}{Git \& VS Code Installation}}
+\headcommand {\slideentry {3}{2}{1}{11/12}{Git \& VS Code Installation}{0}}
+\headcommand {\beamer@framepages {11}{12}}
+\headcommand {\slideentry {3}{2}{2}{13/14}{Git \& VS Code Installation}{0}}
+\headcommand {\beamer@framepages {13}{14}}
+\headcommand {\beamer@subsectionpages {11}{14}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{15}{Google Cloud API Key for AI}}
+\headcommand {\slideentry {3}{3}{1}{15/15}{Google Cloud API Key for AI}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\beamer@subsectionpages {15}{15}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{16}{Configuring Roo Code}}
+\headcommand {\slideentry {3}{4}{1}{16/16}{Configuring Roo Code}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\beamer@sectionpages {9}{16}}
+\headcommand {\beamer@subsectionpages {16}{16}}
+\headcommand {\sectionentry {4}{The Core Git Workflow}{17}{The Core Git Workflow}{0}}
+\headcommand {\slideentry {4}{0}{1}{17/17}{}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\beamer@subsectionpages {17}{17}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{18}{Cloning a Repository}}
+\headcommand {\slideentry {4}{1}{1}{18/18}{Cloning a Repository}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\beamer@subsectionpages {18}{18}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{19}{Essential Git Commands}}
+\headcommand {\slideentry {4}{2}{1}{19/19}{Essential Git Commands}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\beamer@subsectionpages {19}{19}}
+\headcommand {\beamer@subsectionentry {0}{4}{3}{20}{Guided Exercise Summary}}
+\headcommand {\slideentry {4}{3}{1}{20/20}{Guided Exercise Summary}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\beamer@sectionpages {17}{20}}
+\headcommand {\beamer@subsectionpages {20}{20}}
+\headcommand {\sectionentry {5}{Collaboration \& Recovery}{21}{Collaboration \& Recovery}{0}}
+\headcommand {\slideentry {5}{0}{1}{21/21}{}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\beamer@subsectionpages {21}{21}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{22}{Forks vs. Branches}}
+\headcommand {\slideentry {5}{1}{1}{22/22}{Forks vs. Branches}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\beamer@subsectionpages {22}{22}}
+\headcommand {\beamer@subsectionentry {0}{5}{2}{23}{Opening a Pull Request (PR)}}
+\headcommand {\slideentry {5}{2}{1}{23/23}{Opening a Pull Request (PR)}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\beamer@subsectionpages {23}{23}}
+\headcommand {\beamer@subsectionentry {0}{5}{3}{24}{Undo Recipes}}
+\headcommand {\slideentry {5}{3}{1}{24/24}{Undo Recipes}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\slideentry {5}{3}{2}{25/25}{Undo Recipes}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\beamer@sectionpages {21}{25}}
+\headcommand {\beamer@subsectionpages {24}{25}}
+\headcommand {\sectionentry {6}{GitHub Pages: Your Free Portfolio Site}{26}{GitHub Pages: Your Free Portfolio Site}{0}}
+\headcommand {\slideentry {6}{0}{1}{26/26}{}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\beamer@subsectionpages {26}{26}}
+\headcommand {\beamer@subsectionentry {0}{6}{1}{27}{Setting Up GitHub Pages}}
+\headcommand {\slideentry {6}{1}{1}{27/27}{Setting Up GitHub Pages}{0}}
+\headcommand {\beamer@framepages {27}{27}}
+\headcommand {\beamer@subsectionpages {27}{27}}
+\headcommand {\beamer@subsectionentry {0}{6}{2}{28}{Custom Domains}}
+\headcommand {\slideentry {6}{2}{1}{28/28}{Custom Domains}{0}}
+\headcommand {\beamer@framepages {28}{28}}
+\headcommand {\beamer@subsectionpages {28}{28}}
+\headcommand {\beamer@subsectionentry {0}{6}{3}{29}{Advanced: Private Repo to Public GH Pages}}
+\headcommand {\slideentry {6}{3}{1}{29/29}{Advanced: Private Repo to Public GH Pages}{0}}
+\headcommand {\beamer@framepages {29}{29}}
+\headcommand {\slideentry {6}{3}{2}{30/30}{Advanced: Private Repo to Public GH Pages}{0}}
+\headcommand {\beamer@framepages {30}{30}}
+\headcommand {\beamer@sectionpages {26}{30}}
+\headcommand {\beamer@subsectionpages {29}{30}}
+\headcommand {\sectionentry {7}{AI-Powered Workflows with Roo Code}{31}{AI-Powered Workflows with Roo Code}{0}}
+\headcommand {\slideentry {7}{0}{1}{31/31}{}{0}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\beamer@subsectionpages {31}{31}}
+\headcommand {\beamer@subsectionentry {0}{7}{1}{32}{What is Roo Code?}}
+\headcommand {\slideentry {7}{1}{1}{32/32}{What is Roo Code?}{0}}
+\headcommand {\beamer@framepages {32}{32}}
+\headcommand {\beamer@subsectionpages {32}{32}}
+\headcommand {\beamer@subsectionentry {0}{7}{2}{33}{Using Roo Code: "Vibe Coding"}}
+\headcommand {\slideentry {7}{2}{1}{33/33}{Using Roo Code: "Vibe Coding"}{0}}
+\headcommand {\beamer@framepages {33}{33}}
+\headcommand {\beamer@subsectionpages {33}{33}}
+\headcommand {\beamer@subsectionentry {0}{7}{3}{34}{Prompt Ideas \& Local File Access}}
+\headcommand {\slideentry {7}{3}{1}{34/35}{Prompt Ideas \& Local File Access}{0}}
+\headcommand {\beamer@framepages {34}{35}}
+\headcommand {\beamer@sectionpages {31}{35}}
+\headcommand {\beamer@subsectionpages {34}{35}}
+\headcommand {\sectionentry {8}{Advanced Typesetting: LaTeX with WSL2, TeXLive, and VS Code}{36}{Advanced Typesetting: LaTeX with WSL2, TeXLive, and VS Code}{0}}
+\headcommand {\slideentry {8}{0}{1}{36/36}{}{0}}
+\headcommand {\beamer@framepages {36}{36}}
+\headcommand {\beamer@subsectionpages {36}{36}}
+\headcommand {\beamer@subsectionentry {0}{8}{1}{37}{WSL2 \& TeXLive Setup}}
+\headcommand {\slideentry {8}{1}{1}{37/38}{WSL2 \& TeXLive Setup}{0}}
+\headcommand {\beamer@framepages {37}{38}}
+\headcommand {\beamer@subsectionpages {37}{38}}
+\headcommand {\beamer@subsectionentry {0}{8}{2}{39}{VS Code \& LaTeX Workshop}}
+\headcommand {\slideentry {8}{2}{1}{39/40}{VS Code \& LaTeX Workshop}{0}}
+\headcommand {\beamer@framepages {39}{40}}
+\headcommand {\beamer@subsectionpages {39}{40}}
+\headcommand {\beamer@subsectionentry {0}{8}{3}{41}{Roo Code for LaTeX \& Manual Compilation}}
+\headcommand {\slideentry {8}{3}{1}{41/42}{Roo Code for LaTeX \& Manual Compilation}{0}}
+\headcommand {\beamer@framepages {41}{42}}
+\headcommand {\beamer@sectionpages {36}{42}}
+\headcommand {\beamer@subsectionpages {41}{42}}
+\headcommand {\sectionentry {9}{Reference Cheat Sheet}{43}{Reference Cheat Sheet}{0}}
+\headcommand {\slideentry {9}{0}{1}{43/45}{}{0}}
+\headcommand {\beamer@framepages {43}{45}}
+\headcommand {\slideentry {9}{0}{2}{46/47}{}{0}}
+\headcommand {\beamer@framepages {46}{47}}
+\headcommand {\slideentry {9}{0}{3}{48/49}{}{0}}
+\headcommand {\beamer@framepages {48}{49}}
+\headcommand {\beamer@sectionpages {43}{49}}
+\headcommand {\beamer@subsectionpages {43}{49}}
+\headcommand {\sectionentry {10}{Conclusion}{50}{Conclusion}{0}}
+\headcommand {\slideentry {10}{0}{1}{50/50}{}{0}}
+\headcommand {\beamer@framepages {50}{50}}
+\headcommand {\slideentry {10}{0}{2}{51/51}{}{0}}
+\headcommand {\beamer@framepages {51}{51}}
+\headcommand {\beamer@partpages {1}{51}}
+\headcommand {\beamer@subsectionpages {50}{51}}
+\headcommand {\beamer@sectionpages {50}{51}}
+\headcommand {\beamer@documentpages {51}}
+\headcommand {\gdef \inserttotalframenumber {41}}

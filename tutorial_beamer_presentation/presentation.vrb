@@ -1,0 +1,14 @@
+\frametitle{Cheat Sheet: Viewing History \& Undoing}
+  \textbf{Viewing History:}
+  \begin{itemize}
+    \item \texttt{git log} - Basic history
+    \item \texttt{git log --oneline --graph --decorate --all} - Compact graph
+  \end{itemize}
+  \pause
+  \textbf{Undoing Things (Use with care):}
+  \begin{itemize}
+    \item Unstage: \texttt{git reset HEAD <file>} or \texttt{git restore --staged <file>}
+    \item Discard working dir changes: \texttt{git checkout -- <file>} or \texttt{git restore <file>}
+    \item Amend last commit: \texttt{git commit --amend -m "new message"}
+  \end{itemize}
+  \textit{Refer to official Git documentation for more.}

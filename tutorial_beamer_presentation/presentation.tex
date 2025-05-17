@@ -1,0 +1,647 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} % For including images, if any
+
+% Theme choice
+\usetheme{Madrid} % A common, clean theme
+% Or try others like: Berlin, Boadilla, CambridgeUS, Copenhagen, Darmstadt, Dresden, Frankfurt, Goettingen, Hannover, Ilmenau, Juanlespins, Luebeck, Malmoe, Marburg, Montpellier, PaloAlto, Pittsburgh, Rochester, Singapore, Szeged, Warsaw
+
+\title[Creative Tech Guide]{A Creative Technologist's Guide to GitHub & AI-Powered Workflows}
+\subtitle{Tutorial Summary}
+\author{Roo Code Assistant (Generated)}
+\date{\today}
+
+\institute{Derived from the Workshop Tutorial}
+
+\begin{document}
+
+% Title Page
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% Table of Contents
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents
+\end{frame}
+
+% --- Content will be added below ---
+
+% Placeholder for Chapter 0
+\section{Introduction & Workshop Overview}
+\begin{frame}
+  \frametitle{Chapter 0: Introduction & Workshop Overview}
+  \begin{itemize}
+    \item Welcome to the comprehensive guide for creative technologists.
+    \item Focus: GitHub, Git, VS Code, and AI-driven coding assistants.
+    \item Goal: Establish a robust, cost-free, and powerful toolchain.
+    \item Benefits: Version control, collaboration, free web hosting (GitHub Pages), AI assistance.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Original Workshop Agenda Highlights}
+  \begin{itemize}
+    \item Understanding Git & Version Control
+    \item Accounts & Installations (GitHub, Git, VS Code, API Keys)
+    \item Core Git Workflow (Clone, Edit, Commit, Push)
+    \item Collaboration, Recovery, GitHub Pages
+    \item AI Helpers (Roo Code)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Rationale: A Powerful Ecosystem}
+  \begin{itemize}
+    \item \textbf{GitHub:} Centralised hub for code, portfolios, collaboration, and free hosting.
+    \item \textbf{VS Code:} Versatile code editor with seamless Git/GitHub integration.
+    \item \textbf{AI (Roo Code with Gemini):} Code generation, explanation, refactoring, vibe coding, persistent context.
+    \item Collectively: Manage complex projects, foster collaboration, leverage AI with minimal cost.
+  \end{itemize}
+\end{frame}
+
+% Placeholder for Chapter 1
+\section{Why Git? Understanding Version Control}
+\begin{frame}
+  \frametitle{Chapter 1: Why Git? Understanding Version Control}
+  \begin{itemize}
+    \item Git addresses challenges in complex projects:
+    \begin{itemize}
+        \item Safe experimentation (branches).
+        \item Tracking and reverting changes (commits).
+        \item Efficient collaboration.
+        \item Showcasing work.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Core Git Concepts}
+  \begin{itemize}
+    \item \textbf{Repository (Repo):} Directory tracking all changes.
+    \item \textbf{Commit:} Snapshot of your project at a point in time.
+    \item \textbf{Branch:} Parallel version for independent development.
+    \item \textbf{Remote:} Cloud-hosted copy (e.g., on GitHub).
+  \end{itemize}
+  \vfill
+  \textit{Diagram: Local Computer \(\leftrightarrow\) Staging Area \(\leftrightarrow\) Local Repo \(\leftrightarrow\) Remote Repo (GitHub). Branches diverge and merge from Local Repo.}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Git vs. GitHub}
+  \begin{itemize}
+    \item \textbf{Git:} The underlying version control software (local, offline capable).
+    \item \textbf{GitHub:} Web-based platform hosting Git repositories with additional collaboration tools.
+    \item Analogy: Git is the engine, GitHub is a popular car model built around that engine.
+  \end{itemize}
+\end{frame}
+
+% --- Further chapters will be added here ---
+
+\section{Essential Setup: Accounts & Installations}
+\begin{frame}
+  \frametitle{Chapter 2: Essential Setup}
+  \begin{itemize}
+    \item One-time process to establish your digital toolkit.
+    \item Provides a robust, free, and powerful environment.
+    \item Key steps:
+    \begin{enumerate}
+        \item Create GitHub Account
+        \item Install Git \& VS Code
+        \item Set up Google Cloud API Key (for AI)
+        \item Configure Roo Code in VS Code
+    \end{enumerate}
+  \end{itemize}
+  \vfill
+  \textit{Diagram: Setup workflow from GitHub account to Roo Code config.}
+\end{frame}
+
+\subsection{GitHub Account}
+\begin{frame}
+  \frametitle{2a: Creating Your GitHub Account}
+  \begin{itemize}
+    \item Go to \texttt{github.com/signup}.
+    \item Provide email, create password, choose username (professional \& memorable).
+    \item Verify email address.
+    \item Select the \textbf{Free} plan.
+    \item Importance: Professional visibility, community engagement, identity.
+  \end{itemize}
+\end{frame}
+
+\subsection{Git \& VS Code Installation}
+\begin{frame}
+  \frametitle{2b: Installing Git \& VS Code}
+  \textbf{Installing Git:}
+  \begin{itemize}
+    \item macOS: Check with `git --version`; install/update via Homebrew (`brew install git`).
+    \item Windows: Download from `gitforwindows.org`; use default options.
+    \item Verify: `git --version`.
+  \end{itemize}
+  \pause
+  \textbf{Initial Git Configuration:}
+  \begin{block}{Terminal Commands}
+    \texttt{git config --global user.name "Your Name"}\\
+    \texttt{git config --global user.email "your@email.com"}\\
+    \texttt{git config --global init.defaultBranch main}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{2b: Installing Git \& VS Code (Continued)}
+  \textbf{Installing VS Code:}
+  \begin{itemize}
+    \item macOS: Homebrew (`brew install --cask visual-studio-code`) or download from `code.visualstudio.com`.
+    \item Windows: Download from `code.visualstudio.com`; use default options.
+  \end{itemize}
+  \pause
+  \textbf{Recommended VS Code Extensions:}
+  \begin{itemize}
+    \item \textbf{Roo Code (AI Assistant):} For AI-powered coding.
+    \item \textbf{Git Graph:} Visualise Git history.
+    \item \textbf{Markdown Preview Mermaid Support:} For diagrams in Markdown.
+  \end{itemize}
+\end{frame}
+
+\subsection{Google Cloud API Key for AI}
+\begin{frame}
+  \frametitle{2c: Setting up Google Cloud API Key}
+  \begin{itemize}
+    \item Needed for AI features in Roo Code (Google Gemini models).
+    \item Google Cloud Free Tier: Often includes free credits (e.g., \$300 for 90 days). Payment info required for activation.
+    \item Steps:
+    \begin{enumerate}
+        \item Sign in to Google Cloud Console.
+        \item Create/Select a Project.
+        \item Navigate to APIs \& Services > Credentials.
+        \item Create API Key (copy and store securely).
+        \item Enable "Gemini API" in the Library.
+        \item Restrict API Key (recommended for security).
+    \end{enumerate}
+  \end{itemize}
+\end{frame}
+
+\subsection{Configuring Roo Code}
+\begin{frame}
+  \frametitle{2d: Configuring Roo Code in VS Code}
+  \begin{itemize}
+    \item Open Roo Code panel (kangaroo icon). Click settings (cogwheel).
+    \item \textbf{Profile Configuration (for Google Gemini):}
+    \begin{itemize}
+        \item Profile Name (e.g., "Gemini Pro Rate Limited").
+        \item API Provider: Google Gemini.
+        \item Paste your API Key.
+        \item Select AI Model (e.g., "Gemini 2.5 Pro Preview").
+        \item Set Rate Limit (e.g., 30000ms) to manage costs.
+        \item Save.
+    \end{itemize}
+    \item \textbf{Modes:} Ask, Code (for generation/modification), Architect.
+    \item \textbf{Auto-Approve:} Enable Read/Write for file operations.
+    \item Test with a simple prompt (e.g., "Explain Git").
+  \end{itemize}
+\end{frame}
+
+\section{The Core Git Workflow}
+\begin{frame}
+  \frametitle{Chapter 3: The Core Git Workflow}
+  \begin{itemize}
+    \item Introduces fundamental Git operations.
+    \item Cloning repositories, essential commands, basic version control tasks.
+  \end{itemize}
+\end{frame}
+
+\subsection{Cloning a Repository}
+\begin{frame}
+  \frametitle{3.1 Cloning a Repository}
+  \begin{itemize}
+    \item Creates a local copy of an existing repository (all files \& history).
+    \item \textbf{Steps:}
+    \begin{enumerate}
+        \item Find Repository URL on GitHub (\texttt{<> Code} button).
+        \item Clone via VS Code (Recommended: "Clone Git Repository...").
+        \item Alternative: Command line (`git clone <url>`).
+    \end{enumerate}
+  \end{itemize}
+\end{frame}
+
+\subsection{Essential Git Commands}
+\begin{frame}
+  \frametitle{3.2 Essential Git Commands}
+  \begin{columns}[T] % Align tops
+    \begin{column}{.5\textwidth}
+      \begin{itemize}
+        \item \texttt{git status}: Show changes.
+        \item \texttt{git add <file> | .}: Stage changes.
+        \item \texttt{git commit -m "msg"}: Commit staged changes.
+        \item \texttt{git log}: Display history.
+      \end{itemize}
+    \end{column}
+    \begin{column}{.5\textwidth}
+      \begin{itemize}
+        \item \texttt{git pull}: Fetch \& merge remote changes.
+        \item \texttt{git push}: Upload local commits.
+        \item \texttt{git branch}: List/create/delete branches.
+        \item \texttt{git checkout -b <name>}: Create \& switch branch.
+        \item \texttt{git merge <branch>}: Merge branch.
+      \end{itemize}
+    \end{column}
+  \end{columns}
+  \vfill
+  \textit{Diagram: Working Directory \(\xrightarrow{add}\) Staging Area \(\xrightarrow{commit}\) Local Repo \(\xrightarrow{push}\) Remote Repo. Remote \(\xrightarrow{pull}\) Local.}
+\end{frame}
+
+\subsection{Guided Exercise Summary}
+\begin{frame}
+  \frametitle{3.3 Guided Exercise: Your First Git Project}
+  \begin{itemize}
+    \item Create a project folder.
+    \item Initialise Git repository (`git init` or via VS Code).
+    \item Create/modify a file (e.g., `README.md`).
+    \item Stage (`git add`) and commit (`git commit`) changes.
+    \item Create a new branch (`git checkout -b feature-branch`).
+    \item Make changes, stage, and commit on the new branch.
+    \item Switch back to `main` (`git checkout main`).
+    \item Merge the feature branch (`git merge feature-branch`).
+    \item View history (e.g., using Git Graph extension).
+  \end{itemize}
+\end{frame}
+
+\section{Collaboration \& Recovery}
+\begin{frame}
+  \frametitle{Chapter 4: Collaboration \& Recovery}
+  \begin{itemize}
+    \item Explores effective collaboration using GitHub.
+    \item Covers methods for recovering from common mistakes.
+  \end{itemize}
+\end{frame}
+
+\subsection{Forks vs. Branches}
+\begin{frame}
+  \frametitle{4.1 Forks vs. Branches}
+  \begin{itemize}
+    \item \textbf{Branches (Private Team Work):}
+    \begin{itemize}
+        \item Collaborators have direct write access to the same repository.
+        \item Work on features in separate branches within the shared repo.
+        \item Integrate changes via Pull Requests (PRs) within the same repo.
+    \end{itemize}
+    \item \textbf{Forks (Public/Open-Source Contributions):}
+    \begin{itemize}
+        \item For projects you don't have write access to.
+        \item A "fork" is your personal copy of another's repository.
+        \item Make changes in your fork, then open a PR to the original (upstream) repo.
+    \end{itemize}
+  \end{itemize}
+  \vfill
+  \textit{Diagrams: Branching model (shared repo) vs. Forking model (contributing to external repo).}
+\end{frame}
+
+\subsection{Opening a Pull Request (PR)}
+\begin{frame}
+  \frametitle{4.2 Opening a Pull Request (PR)}
+  \begin{itemize}
+    \item A formal proposal to merge changes from your branch/fork into another (often `main`).
+    \item Central to code review and collaboration on GitHub.
+    \item \textbf{Typical Workflow:}
+    \begin{enumerate}
+        \item Push your feature branch to GitHub (`git push -u origin <branch-name>`).
+        \item Create PR on GitHub: Compare \& pull request, select base/compare branches, add title/description.
+        \item Review \& Discussion: Team members comment, suggest changes. Iterate with more commits if needed.
+        \item Merge PR: After approval, merge changes into the base branch. Delete feature branch (good practice).
+    \end{enumerate}
+    \item VS Code extensions (e.g., "GitHub Pull Requests and Issues") allow managing PRs in-editor.
+  \end{itemize}
+\end{frame}
+
+\subsection{Undo Recipes}
+\begin{frame}[fragile] % fragile for verbatim code
+  \frametitle{4.3 Undo Recipes: Recovering from Mistakes}
+  \begin{itemize}
+    \item \textbf{Undo last commit (keep changes):} \texttt{git reset --soft HEAD\textasciitilde1}
+    \item \textbf{Discard unstaged edits (specific file):} \texttt{git checkout -- <file>}
+    \item \textbf{Discard all unstaged edits:} \texttt{git checkout .} or \texttt{git restore .}
+    \item \textbf{Unstage a file:} \texttt{git reset HEAD <file>} or \texttt{git restore --staged <file>}
+    \item \textbf{Amend last commit message:} \texttt{git commit --amend -m "New msg"} (Avoid on pushed commits)
+    \item \textbf{Revert a pushed commit (new commit):} \texttt{git revert <commit\_sha>} (Safer for shared history)
+    \item \textbf{Recover deleted branch (find SHA with \texttt{git reflog}):} \texttt{git branch <new\_name> <sha>}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Undo Recipes: Important Considerations}
+    \begin{itemize}
+        \item \textbf{\texttt{git reset} vs. \texttt{git revert}:}
+        \begin{itemize}
+            \item \texttt{git reset} (especially \texttt{--hard}) rewrites history. Safe for local, unpushed commits. \textbf{Avoid on pushed/shared history.}
+            \item \texttt{git revert} creates a new commit that undoes previous changes. Safer for shared history.
+        \end{itemize}
+        \item Many undo operations are available via VS Code's Source Control panel UI.
+    \end{itemize}
+\end{frame}
+
+\section{GitHub Pages: Your Free Portfolio Site}
+\begin{frame}
+  \frametitle{Chapter 5: GitHub Pages}
+  \begin{itemize}
+    \item Host static websites directly from GitHub repositories for free.
+    \item Ideal for portfolios, project showcases, documentation.
+    \item Serves HTML, CSS, JS (and Markdown converted to HTML).
+    \item URL Structures:
+    \begin{itemize}
+        \item User/Org Site: \texttt{<username>.github.io} (from repo named \texttt{<username>.github.io})
+        \item Project Site: \texttt{<username>.github.io/<repository-name>}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\subsection{Setting Up GitHub Pages}
+\begin{frame}
+  \frametitle{5.2 Setting Up GitHub Pages for a Repository}
+  \begin{enumerate}
+    \item \textbf{Prepare Files:} Website needs at least an \texttt{index.html}. Often placed in root or \texttt{/docs} folder.
+    \item \textbf{Push to GitHub:} Commit and push your website files.
+    \item \textbf{Configure Settings:} In repo `Settings` > `Pages`.
+    \item \textbf{Choose Source:} "Deploy from a branch". Select branch (e.g., `main`) and folder (e.g., `/(root)` or `/docs`). Save.
+    \item \textbf{Wait for Deployment:} Site will be live at the provided URL.
+  \end{enumerate}
+\end{frame}
+
+\subsection{Custom Domains}
+\begin{frame}
+  \frametitle{5.4 Using Custom Domains}
+  \begin{itemize}
+    \item Use your own domain (e.g., \texttt{www.yourproject.com}).
+    \item \textbf{Steps:}
+    \begin{enumerate}
+        \item Add custom domain in GitHub Pages settings.
+        \item Configure DNS records with your domain registrar:
+        \begin{itemize}
+            \item \textbf{Apex domain (\texttt{yourdomain.com}):} Four `A` records pointing to GitHub IPs (e.g., 185.199.108.153) OR `ALIAS`/`ANAME` record to \texttt{username.github.io}.
+            \item \textbf{Subdomain (\texttt{www.yourdomain.com}):} `CNAME` record pointing to \texttt{username.github.io}.
+        \end{itemize}
+        \item Wait for DNS propagation (can take up to 48 hours).
+        \item Verify and Enforce HTTPS in GitHub settings.
+    \end{itemize}
+    \item Roo Code can help explain DNS concepts and troubleshoot.
+  \end{itemize}
+\end{frame}
+
+\subsection{Advanced: Private Repo to Public GH Pages}
+\begin{frame}
+  \frametitle{5.5 Advanced: Publishing from Private Repo}
+  \begin{itemize}
+    \item Keep source code private, publish built static site to a public repo's GitHub Pages.
+    \item Uses GitHub Actions.
+    \item \textbf{Overview:}
+    \begin{enumerate}
+        \item Private source repo, public hosting repo.
+        \item GitHub Action in private repo: builds site, pushes to public repo's `gh-pages` branch.
+        \item Public repo serves Pages from `gh-pages`.
+    \end{enumerate}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Private to Public GH Pages: Setup Steps}
+  \begin{enumerate}
+    \item \textbf{Create Personal Access Token (PAT):} With `repo` and `workflow` scopes. Store securely.
+    \item \textbf{Add PAT as Secret in Private Repo:} E.g., `DEPLOY_TOKEN`.
+    \item \textbf{Create GitHub Actions Workflow File} (e.g., \texttt{.github/workflows/deploy.yml}):
+    \begin{itemize}
+        \item Checks out code.
+        \item Sets up build environment (e.g., Node.js, Hugo).
+        \item Runs build commands.
+        \item Uses an action like \texttt{peaceiris/actions-gh-pages} to deploy to `external_repository` (public repo) using the PAT. Specify `publish_dir` and `publish_branch`.
+    \end{itemize}
+    \item \textbf{Enable GitHub Pages in Public Repo:} Serve from the deployment branch (e.g., `gh-pages`).
+  \end{enumerate}
+  \textit{Roo Code can help generate workflow YAML, explain syntax, and troubleshoot.}
+\end{frame}
+
+\section{AI-Powered Workflows with Roo Code}
+\begin{frame}
+  \frametitle{Chapter 6: AI-Powered Workflows with Roo Code}
+  \begin{itemize}
+    \item Integrating Git/GitHub \& VS Code with AI (Roo Code extension + Gemini API).
+    \item Creates an AI-powered coding assistant directly in the editor.
+  \end{itemize}
+\end{frame}
+
+\subsection{What is Roo Code?}
+\begin{frame}
+  \frametitle{6.1 What is Roo Code? (Recap)}
+  \begin{itemize}
+    \item VS Code extension acting as an AI co-pilot.
+    \item Capabilities:
+    \begin{itemize}
+        \item Generate, explain, refactor, debug code.
+        \item Answer questions, generate documentation.
+    \end{itemize}
+    \item Uses configured API key (e.g., Google Gemini).
+    \item Connects AI to your file system with checks and balances.
+  \end{itemize}
+\end{frame}
+
+\subsection{Using Roo Code: "Vibe Coding"}
+\begin{frame}
+  \frametitle{6.2 How to Use Roo Code: "Vibe Coding"}
+  \begin{itemize}
+    \item Iterative, exploratory, conversational approach.
+    \item \textbf{Process:}
+    \begin{enumerate}
+        \item Open Roo Code sidebar (kangaroo icon).
+        \item Interact via chat: Be specific, conversational, iterate.
+        \item Leverage editor context: Use code selection, active file/project.
+        \item Apply suggestions, manage output (copy, or direct write if permitted).
+        \item \textbf{Crucially, use Git for version control with AI changes.}
+        \item Control Roo Code Modes (Ask, Code, Architect).
+        \item Manage rate limiting \& costs (e.g., 30s limit for free tier).
+    \end{enumerate}
+  \end{itemize}
+\end{frame}
+
+\subsection{Prompt Ideas \& Local File Access}
+\begin{frame}
+  \frametitle{6.3 Prompt Ideas \& 6.4 Local File Access}
+  \textbf{Prompt Ideas for Creative Technologists:}
+  \begin{itemize}
+    \item Project scaffolding (e.g., "Lay out a Python eye tracker project...").
+    \item Documentation (e.g., "Refactor README to beginner tutorial.").
+    \item Creative asset generation/modification (e.g., "Suggest color-blind safe palette...").
+    \item Complex document/diagram creation (e.g., Gantt charts with Mermaid).
+    \item Understanding existing code.
+  \end{itemize}
+  \pause
+  \textbf{Power of AI with Local File Access:}
+  \begin{itemize}
+    \item Superior contextual understanding (reads multiple project files).
+    \item Bulk operations (generate directory structures, refactor across files).
+    \item Persistent memory within a session.
+  \end{itemize}
+  \textit{This local integration + Git = dynamic and powerful development.}
+\end{frame}
+
+\section{Advanced Typesetting: LaTeX with WSL2, TeXLive, and VS Code}
+\begin{frame}
+  \frametitle{Chapter 8: LaTeX with WSL2, TeXLive, \& VS Code}
+  \begin{itemize}
+    \item For high-quality documents (complex formulae, structured layouts).
+    \item Setup: WSL2 (Ubuntu), TeXLive, VS Code + LaTeX Workshop extension.
+    \item Goal: Seamless LaTeX development in a familiar coding environment.
+  \end{itemize}
+\end{frame}
+
+\subsection{WSL2 \& TeXLive Setup}
+\begin{frame}
+  \frametitle{8.1-8.3: WSL2 \& TeXLive Setup}
+  \textbf{Setting up WSL2 \& Ubuntu:}
+  \begin{itemize}
+    \item Install Ubuntu from Microsoft Store (e.g., Ubuntu 22.04 LTS).
+    \item Install Windows Terminal (recommended).
+    \item Basic Linux commands: `cd`, `ls`, `mkdir`, `sudo apt update/upgrade`.
+  \end{itemize}
+  \pause
+  \textbf{Installing TeXLive on Ubuntu:}
+  \begin{itemize}
+    \item Update package lists: `sudo apt update`.
+    \item Install TeXLive: `sudo apt install texlive texlive-latex-extra`.
+    \item (Note: Installs Ubuntu repo version, generally stable).
+    \item Explore CTAN (\texttt{ctan.org}) for packages/documentation.
+  \end{itemize}
+\end{frame}
+
+\subsection{VS Code \& LaTeX Workshop}
+\begin{frame}[fragile]
+  \frametitle{8.4-8.5: VS Code \& LaTeX Workshop}
+  \textbf{Connecting VS Code to WSL2:}
+  \begin{itemize}
+    \item Install "WSL" extension (by Microsoft) in VS Code.
+    \item Connect to WSL (Cmd/Ctrl+Shift+P > "WSL: Connect to WSL").
+    \item Open project folder within WSL environment.
+  \end{itemize}
+  \pause
+  \textbf{Setting up LaTeX Workshop Extension:}
+  \begin{itemize}
+    \item Install "LaTeX Workshop" (by James Yu) in WSL-connected VS Code.
+    \item Configure build tools in workspace \texttt{.vscode/settings.json} for `pdflatex`.
+    \item Key settings: `latex-workshop.latex.tools` and `latex-workshop.latex.recipes`.
+    \item Features: Auto-compile on save, PDF viewer, SyncTeX.
+    \item Consider "Code Spell Checker" extension.
+  \end{itemize}
+\end{frame}
+
+\subsection{Roo Code for LaTeX \& Manual Compilation}
+\begin{frame}
+  \frametitle{8.6-8.7: Roo Code for LaTeX \& Manual Compilation}
+  \textbf{Enhancing LaTeX Workflow with Roo Code:}
+  \begin{itemize}
+    \item Understand complex LaTeX syntax.
+    \item Generate LaTeX structures (articles, beamer slides).
+    \item Debug compilation errors.
+    \item Find relevant LaTeX packages.
+    \item Refine content.
+    \item \textit{Use Git for version control with AI-generated LaTeX.}
+  \end{itemize}
+  \pause
+  \textbf{Manual Compilation (Understanding):}
+  \begin{itemize}
+    \item Create simple \texttt{.tex} file.
+    \item Compile from WSL terminal: \texttt{pdflatex mydocument.tex}.
+    \item Confirms TeXLive setup and basic process.
+  \end{itemize}
+\end{frame}
+
+\section{Reference Cheat Sheet}
+\begin{frame}[fragile]
+  \frametitle{Chapter 9: Reference Cheat Sheet (Git Commands)}
+  \begin{itemize}
+    \item \textbf{Configuration (Once):}
+    \begin{itemize}
+        \item \texttt{git config --global user.name "Name"}
+        \item \texttt{git config --global user.email "email@example.com"}
+        \item \texttt{git config --global init.defaultBranch main}
+    \end{itemize}
+    \pause
+    \item \textbf{Starting Project:}
+    \begin{itemize}
+        \item \texttt{mkdir project; cd project; git init}
+    \end{itemize}
+    \pause
+    \item \textbf{Connecting to Remote:}
+    \begin{itemize}
+        \item \texttt{git remote add origin <url>}
+        \item \texttt{git push -u origin main}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Cheat Sheet: Everyday Workflow}
+  \begin{itemize}
+    \item \texttt{git status} - Check changes
+    \item \texttt{git add .} or \texttt{git add <file>} - Stage changes
+    \item \texttt{git commit -m "message"} - Commit staged
+    \item \texttt{git push} - Push to remote
+    \item \texttt{git pull} - Pull from remote
+  \end{itemize}
+  \pause
+  \textbf{Branching:}
+  \begin{itemize}
+    \item \texttt{git branch} - List branches
+    \item \texttt{git branch <name>} - Create branch
+    \item \texttt{git checkout <name>} - Switch branch
+    \item \texttt{git checkout -b <name>} - Create \& switch
+    \item \texttt{git merge <name>} - Merge branch
+    \item \texttt{git branch -d <name>} - Delete merged branch
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Cheat Sheet: Viewing History \& Undoing}
+  \textbf{Viewing History:}
+  \begin{itemize}
+    \item \texttt{git log} - Basic history
+    \item \texttt{git log --oneline --graph --decorate --all} - Compact graph
+  \end{itemize}
+  \pause
+  \textbf{Undoing Things (Use with care):}
+  \begin{itemize}
+    \item Unstage: \texttt{git reset HEAD <file>} or \texttt{git restore --staged <file>}
+    \item Discard working dir changes: \texttt{git checkout -- <file>} or \texttt{git restore <file>}
+    \item Amend last commit: \texttt{git commit --amend -m "new message"}
+  \end{itemize}
+  \textit{Refer to official Git documentation for more.}
+\end{frame}
+
+\section{Conclusion}
+\begin{frame}
+  \frametitle{Conclusion & Next Steps}
+  \begin{itemize}
+    \item This tutorial provides a foundation for a modern creative technology workflow.
+    \item Key tools: Git, GitHub, VS Code, and AI (Roo Code).
+    \item Practice these concepts to enhance your projects and collaboration.
+    \item Explore further: Advanced Git, specific AI prompts, deeper LaTeX integration.
+  \end{itemize}
+  \vfill
+  \centering
+  Thank you for following this guide!
+\end{frame}
+
+% How Roo Code can help with Beamer presentations
+\begin{frame}
+  \frametitle{AI Assistance for This Presentation}
+  \begin{itemize}
+    \item This Beamer presentation structure and initial content were generated with AI assistance (like Roo Code).
+    \item Roo Code can help:
+    \begin{itemize}
+        \item Summarise text for slides.
+        \item Suggest Beamer code structures.
+        \item Explain LaTeX or Beamer syntax.
+        \item Refine slide content for clarity and conciseness.
+        \item Generate draft content for new sections based on prompts.
+    \end{itemize}
+    \item Remember to review and refine AI-generated content for accuracy and style.
+  \end{itemize}
+\end{frame}
+
+\end{document}

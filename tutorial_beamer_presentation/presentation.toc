@@ -1,0 +1,29 @@
+\beamer@sectionintoc {1}{Introduction & Workshop Overview}{3}{0}{1}
+\beamer@sectionintoc {2}{Why Git? Understanding Version Control}{6}{0}{2}
+\beamer@sectionintoc {3}{Essential Setup: Accounts & Installations}{9}{0}{3}
+\beamer@subsectionintoc {3}{1}{GitHub Account}{10}{0}{3}
+\beamer@subsectionintoc {3}{2}{Git \& VS Code Installation}{11}{0}{3}
+\beamer@subsectionintoc {3}{3}{Google Cloud API Key for AI}{15}{0}{3}
+\beamer@subsectionintoc {3}{4}{Configuring Roo Code}{16}{0}{3}
+\beamer@sectionintoc {4}{The Core Git Workflow}{17}{0}{4}
+\beamer@subsectionintoc {4}{1}{Cloning a Repository}{18}{0}{4}
+\beamer@subsectionintoc {4}{2}{Essential Git Commands}{19}{0}{4}
+\beamer@subsectionintoc {4}{3}{Guided Exercise Summary}{20}{0}{4}
+\beamer@sectionintoc {5}{Collaboration \& Recovery}{21}{0}{5}
+\beamer@subsectionintoc {5}{1}{Forks vs. Branches}{22}{0}{5}
+\beamer@subsectionintoc {5}{2}{Opening a Pull Request (PR)}{23}{0}{5}
+\beamer@subsectionintoc {5}{3}{Undo Recipes}{24}{0}{5}
+\beamer@sectionintoc {6}{GitHub Pages: Your Free Portfolio Site}{26}{0}{6}
+\beamer@subsectionintoc {6}{1}{Setting Up GitHub Pages}{27}{0}{6}
+\beamer@subsectionintoc {6}{2}{Custom Domains}{28}{0}{6}
+\beamer@subsectionintoc {6}{3}{Advanced: Private Repo to Public GH Pages}{29}{0}{6}
+\beamer@sectionintoc {7}{AI-Powered Workflows with Roo Code}{31}{0}{7}
+\beamer@subsectionintoc {7}{1}{What is Roo Code?}{32}{0}{7}
+\beamer@subsectionintoc {7}{2}{Using Roo Code: "Vibe Coding"}{33}{0}{7}
+\beamer@subsectionintoc {7}{3}{Prompt Ideas \& Local File Access}{34}{0}{7}
+\beamer@sectionintoc {8}{Advanced Typesetting: LaTeX with WSL2, TeXLive, and VS Code}{36}{0}{8}
+\beamer@subsectionintoc {8}{1}{WSL2 \& TeXLive Setup}{37}{0}{8}
+\beamer@subsectionintoc {8}{2}{VS Code \& LaTeX Workshop}{39}{0}{8}
+\beamer@subsectionintoc {8}{3}{Roo Code for LaTeX \& Manual Compilation}{41}{0}{8}
+\beamer@sectionintoc {9}{Reference Cheat Sheet}{43}{0}{9}
+\beamer@sectionintoc {10}{Conclusion}{50}{0}{10}
