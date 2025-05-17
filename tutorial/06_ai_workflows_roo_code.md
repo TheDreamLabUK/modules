@@ -89,4 +89,4 @@ The workshop concluded that this setup provides "the ultimate version of AI tool
 
 ---
 
-Next: [Chapter 7: Reference Cheat Sheet](./07_cheat_sheet.md)
+Next: [Chapter 8: Advanced Typesetting: LaTeX with WSL2, TeXLive, and VS Code](./08_latex_wsl_vscode.md)
